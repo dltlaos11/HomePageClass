@@ -4,7 +4,9 @@
   "description": "홈페이지입문 수업 기록용",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run open && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "opener http://localhost:8080/"
   },
   "repository": {
     "type": "git",

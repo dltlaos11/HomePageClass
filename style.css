@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+tfoot {
+  background-color: #3f87a6;
+  color: #fff;
+}
+.hi {
+  background-color: #d7d9f2;
+}
+
+.bye {
+  background-color: #ffe8d4;
+}
