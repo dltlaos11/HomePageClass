@@ -10,6 +10,9 @@ app.set("port", process.env.PORT || 8080);
 
 app.get("/", function (req, res) {
   res.redirect("index.html");
+  res.redirect("index2.html");
+  res.redirect("intro.html");
+  res.redirect("form.html");
 });
 
 http.createServer(app).listen(app.get("port"), function () {
