@@ -1,24 +1,94 @@
-html,
 body {
-  height: 100%;
-  width: 100%;
-}
-tfoot {
-  background-color: #3f87a6;
-  color: #fff;
-}
-.hi {
-  background-color: #d7d9f2;
+  background-color: black;
+  color: #ffffff;
+  /* height: 6000px; */
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-.bye {
-  background-color: #ffe8d4;
+.side {
+  position: fixed;
+  z-index: 1; /* css 최상위(맨위) */
+  top: 30%;
+  /* transform: translateY(-40%); */
 }
 
-.blue {
-  background-color: #d7d9f2;
+.side a {
+  z-index: 2;
+  background: #c0392b;
+  color: #c0392b;
+  font-size: 30px;
+  display: block;
+  width: 220%; /*  */
+  padding: 12px;
+  text-decoration: none;
+  /* text-align: left; */
+  margin: 8px 0;
+  border-radius: 6px;
+  margin-left: -60px;
+  transition: 0.5s all;
 }
 
-.gray {
-  background-color: gray;
+.side a:hover {
+  color: white;
+  margin-left: 0;
+}
+
+section {
+  /* margin-top: 500px; */
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 140vh;
+  /* color: white; */
+  /* text-align: center; */
+
+  /* opacity: 0; 안 보임 */
+  /* transition: all 0.5s; opacity가 변경되면 서서히 0.5초에 걸쳐서 변경해줌 */
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+/* 불필요한 애니메이션 동작 축소 */
+
+.logos {
+  display: flex;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(4) {
+  transition-delay: 200ms;
+}
+.logo:nth-child(5) {
+  transition-delay: 200ms;
+}
+
+lottie-player {
+  z-index: 1;
+  --lottie-player-seeker-track-color: white;
+  --lottie-player-seeker-thumb-color: white;
 }

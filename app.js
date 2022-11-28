@@ -13,6 +13,7 @@ app.get("/", function (req, res) {
   res.redirect("index2.html");
   res.redirect("intro.html");
   res.redirect("form.html");
+  res.redirect("SubPage.html");
 });
 
 http.createServer(app).listen(app.get("port"), function () {

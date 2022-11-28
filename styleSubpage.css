@@ -1,0 +1,457 @@
+h2 {
+  text-align: center;
+}
+
+.side {
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  /* transform: translateY(-40%); */
+}
+
+.side a {
+  z-index: 2;
+  background: #c0392b;
+  color: #c0392b;
+  font-size: 30px;
+  display: block;
+  width: 220%;
+  padding: 12px;
+  text-decoration: none;
+  /* text-align: left; */
+  margin: 8px 0;
+  border-radius: 6px;
+  margin-left: -60px;
+  transition: 0.6s all;
+}
+
+.side a:hover {
+  color: white;
+  margin-left: 0;
+}
+
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+} /* 스크롤바 가로를 0px로 만들어서 없애기 */
+
+::selection {
+  background-color: #f5f5f7;
+  color: #0073ff;
+} /* 드래그 컬러 변경 */
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+} /* 부드러운 스크롤 */
+
+body {
+  /* text-align: center; */
+  margin: 0 auto;
+} /* 전체 가운데정렬 */
+
+.top-btn {
+  position: fixed;
+  margin: 50px;
+  bottom: 10px;
+  z-index: 2;
+} /* 위로가기 버튼 */
+.top-btn img {
+  width: 50px;
+}
+
+.bottom {
+  text-align: center;
+  margin: 30px;
+  font-family: "Pretendard-Regular";
+} /* 하단 카피라이트, 링크색상 */
+a,
+a:hover {
+  color: #f5f5f7;
+}
+
+.top-title {
+  font-size: 3.5rem;
+  font-family: "SBAggroB";
+  margin-bottom: 5rem;
+  word-break: break-all;
+}
+.store-navigation-nav-row {
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+  margin: 50px;
+}
+.store-menu-navigation .store-menu-navigation-list img {
+  filter: grayscale(1);
+}
+.store-menu-navigation-link-brand {
+  font-size: 20px;
+  font-family: "SBAggroB";
+  padding: 20px 0;
+  color: #efeff4;
+  filter: drop-shadow(0px 0px 3px #efeff4);
+}
+.store-menu-navigation-link-brand:hover {
+  color: #0073ff;
+  filter: drop-shadow(0px 0px 7px #0073ff);
+}
+/* 최상단 */
+
+.store-effect.cards-scroll .headers h1 {
+  font-family: "SBAggroB";
+  font-size: 3rem;
+  color: #efeff4;
+}
+.store-effect.cards-scroll .headers h2 {
+  font-family: "GmarketSansMedium";
+}
+
+.store-effect.cards-scroll .headers div.paragraphs p {
+  font-family: "GmarketSansMedium";
+  font-weight: 100;
+  font-size: 16px;
+}
+.store-effect.cards-scroll .multi-panels .body-copy .summary {
+  color: #878791;
+}
+.store-effect.cards-scroll .headers div {
+  margin: 2rem;
+  margin-bottom: 10px;
+}
+
+.store-effect.cards-scroll
+  .multi-panels
+  ul
+  li
+  .container-content
+  .cta-container
+  a {
+  border-radius: 0px;
+  color: #000;
+  background-color: #0073ff;
+}
+.store-effect.cards-scroll
+  .multi-panels
+  ul
+  li
+  .container-content
+  .cta-container
+  a:hover {
+  color: #000;
+  background-color: #efeff4;
+}
+
+.store-effect.cards-scroll.products-api
+  .multi-panels
+  ul
+  li
+  .container-content
+  .body-copy
+  h3 {
+  font-family: "GmarketSansMedium";
+}
+
+.store-effect.cards-scroll .multi-panels .body-copy .summary {
+  font-family: "Pretendard-Regular";
+  font-weight: 100;
+  font-size: 16px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.store-menu-navigation .heading {
+  font-size: 1.3125rem !important;
+  line-height: 1;
+  font-weight: 700 !important;
+}
+
+.store-menu-navigation h1.heading {
+  line-height: 1;
+}
+.store-menu-navigation .heading .green {
+  font: normal normal bold 40px/48px RazerF5, sans-serif !important;
+  display: block;
+}
+.store-menu-navigation {
+  margin: 0 auto;
+  padding: 2.5rem 0 0;
+  max-width: calc(1200px + 2rem);
+  background: #000;
+  position: relative;
+}
+.store-menu-navigation .store-navigation-row.top-row {
+  margin: 0;
+  padding: 2.5rem 1rem 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.store-menu-navigation .store-navigation-row.bottom-row {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 40px;
+  overflow: auto;
+  overflow-y: hidden;
+}
+@media screen and (min-width: 1270px) {
+  .store-menu-navigation .store-navigation-row.bottom-row {
+    scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
+  }
+}
+.store-menu-navigation .store-navigation-row.top-row > div {
+  width: 87%;
+}
+.store-menu-navigation .store-navigation-row.top-row > div:only-child {
+  width: 100%;
+}
+.store-menu-navigation .heading {
+  letter-spacing: 0px;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+.store-menu-navigation .store-side-navigation-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  flex: 1;
+}
+.store-menu-navigation .store-side-navigation-item,
+.store-menu-navigation .store-side-navigation-item > a {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: 0rem;
+  max-width: 190px;
+}
+.store-menu-navigation .store-side-navigation-link:only-child {
+  padding: 0 0rem;
+}
+.store-menu-navigation .store-side-navigation-link:not(:only-child) {
+  padding: 0 0.5rem;
+}
+.store-menu-navigation a .store-side-navigation-link:not(:empty):after {
+  content: ">";
+  display: inline-block;
+  margin: 0 0.25rem;
+  /* position: absolute; */
+}
+.store-menu-navigation .store-side-navigation-list {
+  color: #eeeeee;
+  align-self: center;
+}
+.store-menu-navigation a {
+  color: #eeeeee !important;
+  position: relative;
+}
+.store-menu-navigation .store-side-navigation-item:hover a {
+  color: #eeeeee !important;
+  text-decoration: underline !important;
+}
+.store-menu-navigation .store-menu-navigation-item:hover a,
+.store-menu-navigation .store-menu-navigation-item a.active {
+  color: #44d62c !important;
+  text-decoration: none !important;
+}
+.store-menu-navigation .store-menu-navigation-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: calc(100% - 2rem);
+  height: auto;
+  margin: 0 auto;
+  align-content: space-between;
+  align-self: center;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+.store-menu-navigation .store-menu-navigation-list.justify {
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+.store-menu-navigation .store-menu-navigation-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  min-width: 100px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1270px) {
+  .store-menu-navigation
+    .store-menu-navigation-list.slide
+    .store-menu-navigation-item {
+    scroll-snap-align: start;
+  }
+  .store-navigation-nav-row.slide {
+    position: relative;
+    height: 159px;
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .store-menu-navigation
+    .store-menu-navigation-list.slide
+    .store-menu-navigation-item {
+    min-width: 120px;
+  }
+  .store-menu-navigation
+    .store-navigation-nav-row.slide
+    .store-menu-navigation-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0px;
+    width: 100%;
+  }
+  .store-menu-navigation
+    .store-navigation-nav-row.slide
+    .store-menu-navigation-link {
+    padding: 0 0.5rem;
+  }
+}
+.store-navigation-nav {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}
+.store-navigation-nav button {
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  background-color: rgba(133, 133, 133, 0);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  line-height: 32px;
+  font-size: 42px;
+  border: none;
+}
+.store-navigation-nav button[disabled] {
+  display: none;
+}
+.store-navigation-nav button #default {
+  fill: #eee;
+}
+.store-navigation-nav button:hover #default {
+  fill: #44d62c;
+}
+.store-navigation-nav button.store-navigation-nav-arrow-previous {
+  left: -45px;
+}
+.store-navigation-nav button.store-navigation-nav-arrow-next {
+  right: -45px;
+}
+.store-menu-navigation .store-menu-navigation-list img {
+  height: 75px;
+  width: auto;
+}
+.store-menu-navigation .store-side-navigation-list img {
+  height: 30px;
+  width: auto;
+}
+.store-menu-navigation .store-menu-navigation-list .store-menu-navigation-link {
+  margin-top: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .store-menu-navigation .heading .green {
+    line-height: 2.5rem !important;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+  .store-menu-navigation .heading {
+    letter-spacing: 0px;
+    color: #eeeeee;
+    text-transform: uppercase;
+  }
+  .store-menu-navigation .store-navigation-row.top-row > div {
+    width: 100%;
+  }
+  .store-menu-navigation .store-side-navigation-list {
+    align-content: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .store-menu-navigation .store-side-navigation-item {
+    margin-bottom: 0;
+  }
+  .store-menu-navigation .store-navigation-row.top-row {
+    padding-top: 2rem;
+  }
+  .store-menu-navigation .store-menu-navigation-list {
+    column-gap: 3rem !important;
+  }
+}
+
+.store-menu-navigation .store-navigation-row.bottom-row {
+  display: block;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-color: rgba(255, 255, 255, 0.18) #31373a;
+}
+.store-navigation-nav {
+  display: none;
+}
+@media screen and (min-width: 1270px) {
+  .store-menu-navigation .store-navigation-row.bottom-row {
+    overflow-x: hidden;
+  }
+  .store-navigation-nav.slide {
+    display: block;
+  }
+}
+.store-menu-navigation .store-navigation-row.bottom-row::-webkit-scrollbar {
+  height: 6px;
+}
+.store-menu-navigation .store-navigation-row.bottom-row::-webkit-scrollbar {
+  display: none;
+}
+.store-menu-navigation
+  .store-navigation-row.bottom-row::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 40px;
+}
+.store-menu-navigation
+  .store-navigation-row.bottom-row::-webkit-scrollbar-track {
+  background-color: transparent;
+}
