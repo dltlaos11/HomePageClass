@@ -24,9 +24,3 @@ let observer = new IntersectionObserver((e) => {
 let hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 // observer.observe(el); html요소가 화면에 등장하는지 감시해줌
-
-// let hiddenElementsLogos = document.querySelectorAll(".logo");
-// hiddenElements.forEach(((element, i) => {
-//     element.style.transitionDelay = i * 900 + "ms";
-//     hidingObserver.observe(element);
-// }));
