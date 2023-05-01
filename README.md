@@ -13,3 +13,5 @@
 ## Intersection Observer API
 
 - Toss, Apple 홈페이지에서 많이 사용되는 Scroll Event에 대해 알아보고 싶었고(Intersection Observer API가 사용되는지는 모르지만..), `(게이밍 기어) 홍보 페이지`가 주제이기도 하여서 Scroll 인터섹션을 사용해보았습니다.
+
+![Gaming-Gear-온라인-스토어-Chrome-2023-05-02-02-19-00](https://user-images.githubusercontent.com/74396128/235497983-0ff7d827-cf71-4ea7-afc3-90cae1912285.gif)
